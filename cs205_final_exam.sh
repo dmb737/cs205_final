@@ -10,3 +10,13 @@
 # The spacing and header formatting should match the above formatting description exactly.
 # There should be a comment explaining the purpose of each line in your shell script. 
 # The data file will be passed in to the script as a positional parameter and will not necessarily be called best_pokemon.dat. However, you can assume that any file passed to this script will be formatted exactly the way best_pokemon.dat is formatted.
+
+FILE=$1
+Counter=0
+while read i; do
+    let COUNTER++
+done < "$FIlE"
+let COUNTER=COUNTER-1
+echo "Total Pokemon: $COUNTER"
+echo "Avg. HP:"
+echo "Avg. Attack:"
